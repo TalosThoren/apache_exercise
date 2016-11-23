@@ -1,0 +1,21 @@
+---
+driver:
+  name: vagrant
+  network:
+    - ["private_network", { type: "dhcp" }]
+
+provisioner:
+  name: nodes
+  log_level: info
+
+platforms:
+  - name: ubuntu-14.04
+
+suites:
+  - name: default
+    run_list:
+      - recipe[apache_exercise::test_install_apache2]
+      - recipe[apache_exercise::apache_update]
+  - name: sentinel
+    run_list:
+      - recipe[apache_exercise::test_down_tag_sentinel]
