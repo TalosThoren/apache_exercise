@@ -35,10 +35,6 @@ on more than one instance at a time.
 - Ensures only one instance can be interrupted at any given moment in time
 - Ensures updated configuration is loaded by apache
 
-### Definition of Done:
-
-- Passes tests
-
 With our simple user story above, we can begin breaking down requirements to
 accomplish the goal.
 
@@ -62,13 +58,11 @@ Some thoughts:
 
 What steps do we need to perform to accomplish this goal?
 
-1. Gather available nodes.
-2. Check if any nodes are down (implemented with tags).
-3. If not, add down-tag to current node.
-..1. It may be necessary regather node info and re-confirm we are the only node
-    with a down-tag before continuing.
-4. Update configuration.
-5. Reload (or restart if necessary) apache httpd.
+1. Check if any nodes are down (implemented with tags).
+2. If not, add down-tag to current node.
+3. Update configuration.
+4. Reload (or restart if necessary) apache httpd.
+5. Remove down-tag
 
 ## What should we test for?
 
@@ -79,3 +73,26 @@ discusses how to implement multi-node kitchen tests, which we'll use.
 ### Resources
 
 - [Multinode Testing with Test-Kitchen](http://www.hurryupandwait.io/blog/multi-node-test-kitchen-tests-and-working-with-vagrant-nat-addressing-with-virtualbox)
+
+## Implementation
+
+The completed implementation is somewhat underwhelming. It provides a public
+interface via the `files/default/apache2` directory. It provides a simple
+default config in that directory for testing.
+
+A test recipe exists to install apache2 on our test-kitchen instances. This
+approach probably breaks best practices.
+
+A second test recipe exists, as well as a test-kitchen instance configuration,
+for creating a sentinel instance, which simply sets the down-tag. Unfortunately,
+I learned that I made bad assumptions about local testing tools. The chef-zero
+provider, which the "nodes" provider I am using relies upon, simply does not
+return anything when searching tags. This breaks my intended test, and testing
+must be rethought.
+
+As the assignment says, however, we want a working solution now rather than a
+perfect solution never.
+
+I don't have the resources to test this on real infrastructure, presently, so
+we'll have to suffice with a run of the test-kitchen instance. A log of that run
+can be found [here](default-ubuntu-1404.log).

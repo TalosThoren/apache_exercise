@@ -1,0 +1,187 @@
+I, [2016-11-24T08:02:59.121477 #5200]  INFO -- default-ubuntu-1404: -----> Creating <default-ubuntu-1404>...
+I, [2016-11-24T08:03:00.905924 #5200]  INFO -- default-ubuntu-1404: Bringing machine 'default' up with 'virtualbox' provider...
+I, [2016-11-24T08:03:02.283535 #5200]  INFO -- default-ubuntu-1404: ==> default: Importing base box 'bento/ubuntu-14.04'...
+I, [2016-11-24T08:03:12.554896 #5200]  INFO -- default-ubuntu-1404: [KProgress: 10%[KProgress: 20%[KProgress: 40%[KProgress: 50%[KProgress: 70%[KProgress: 80%[KProgress: 90%[K==> default: Matching MAC address for NAT networking...
+I, [2016-11-24T08:03:12.686472 #5200]  INFO -- default-ubuntu-1404: ==> default: Checking if box 'bento/ubuntu-14.04' is up to date...
+I, [2016-11-24T08:03:13.891046 #5200]  INFO -- default-ubuntu-1404: ==> default: Setting the name of the VM: kitchen-apache_exercise-default-ubuntu-1404_default_1479996193835_76709
+I, [2016-11-24T08:03:14.347037 #5200]  INFO -- default-ubuntu-1404: ==> default: Clearing any previously set network interfaces...
+I, [2016-11-24T08:03:14.586468 #5200]  INFO -- default-ubuntu-1404: ==> default: Preparing network interfaces based on configuration...
+I, [2016-11-24T08:03:14.586834 #5200]  INFO -- default-ubuntu-1404:     default: Adapter 1: nat
+I, [2016-11-24T08:03:14.587139 #5200]  INFO -- default-ubuntu-1404:     default: Adapter 2: hostonly
+I, [2016-11-24T08:03:14.647591 #5200]  INFO -- default-ubuntu-1404: ==> default: Forwarding ports...
+I, [2016-11-24T08:03:14.718215 #5200]  INFO -- default-ubuntu-1404:     default: 22 (guest) => 2222 (host) (adapter 1)
+I, [2016-11-24T08:03:14.881256 #5200]  INFO -- default-ubuntu-1404: ==> default: Booting VM...
+I, [2016-11-24T08:03:15.123776 #5200]  INFO -- default-ubuntu-1404: ==> default: Waiting for machine to boot. This may take a few minutes...
+I, [2016-11-24T08:03:15.378147 #5200]  INFO -- default-ubuntu-1404:     default: SSH address: 127.0.0.1:2222
+I, [2016-11-24T08:03:15.378915 #5200]  INFO -- default-ubuntu-1404:     default: SSH username: vagrant
+I, [2016-11-24T08:03:15.378972 #5200]  INFO -- default-ubuntu-1404:     default: SSH auth method: private key
+I, [2016-11-24T08:03:31.661955 #5200]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-11-24T08:03:31.662043 #5200]  INFO -- default-ubuntu-1404:     default: Vagrant insecure key detected. Vagrant will automatically replace
+I, [2016-11-24T08:03:31.662070 #5200]  INFO -- default-ubuntu-1404:     default: this with a newly generated keypair for better security.
+I, [2016-11-24T08:03:33.045440 #5200]  INFO -- default-ubuntu-1404:     default: 
+I, [2016-11-24T08:03:33.045556 #5200]  INFO -- default-ubuntu-1404:     default: Inserting generated public key within guest...
+I, [2016-11-24T08:03:33.418265 #5200]  INFO -- default-ubuntu-1404:     default: Removing insecure key from the guest if it's present...
+I, [2016-11-24T08:03:33.820118 #5200]  INFO -- default-ubuntu-1404:     default: Key inserted! Disconnecting and reconnecting using new SSH key...
+I, [2016-11-24T08:03:35.128955 #5200]  INFO -- default-ubuntu-1404: ==> default: Machine booted and ready!
+I, [2016-11-24T08:03:35.130523 #5200]  INFO -- default-ubuntu-1404: ==> default: Checking for guest additions in VM...
+I, [2016-11-24T08:03:35.200900 #5200]  INFO -- default-ubuntu-1404: ==> default: Setting hostname...
+I, [2016-11-24T08:03:35.640207 #5200]  INFO -- default-ubuntu-1404: ==> default: Configuring and enabling network interfaces...
+I, [2016-11-24T08:03:36.478477 #5200]  INFO -- default-ubuntu-1404: ==> default: Machine not provisioned because `--no-provision` is specified.
+I, [2016-11-24T08:03:39.080955 #5200]  INFO -- default-ubuntu-1404: [SSH] Established
+I, [2016-11-24T08:03:39.081297 #5200]  INFO -- default-ubuntu-1404: Vagrant instance <default-ubuntu-1404> created.
+I, [2016-11-24T08:03:39.082912 #5200]  INFO -- default-ubuntu-1404: Finished creating <default-ubuntu-1404> (0m39.96s).
+I, [2016-11-24T08:03:39.083020 #5200]  INFO -- default-ubuntu-1404: -----> Converging <default-ubuntu-1404>...
+I, [2016-11-24T08:04:09.208711 #5200]  INFO -- default-ubuntu-1404: Preparing files for transfer
+I, [2016-11-24T08:04:09.209129 #5200]  INFO -- default-ubuntu-1404: Preparing dna.json
+I, [2016-11-24T08:04:09.209835 #5200]  INFO -- default-ubuntu-1404: Resolving cookbook dependencies with Berkshelf 5.2.0...
+I, [2016-11-24T08:04:09.350759 #5200]  INFO -- default-ubuntu-1404: Removing non-cookbook files before transfer
+I, [2016-11-24T08:04:09.353156 #5200]  INFO -- default-ubuntu-1404: Preparing nodes
+I, [2016-11-24T08:04:09.353661 #5200]  INFO -- default-ubuntu-1404: Preparing validation.pem
+I, [2016-11-24T08:04:09.353904 #5200]  INFO -- default-ubuntu-1404: Preparing client.rb
+I, [2016-11-24T08:04:09.398804 #5200]  INFO -- default-ubuntu-1404: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-11-24T08:04:09.399564 #5200]  INFO -- default-ubuntu-1404: Downloading https://omnitruck.chef.io/install.sh to file /tmp/install.sh
+I, [2016-11-24T08:04:09.400182 #5200]  INFO -- default-ubuntu-1404: Trying wget...
+I, [2016-11-24T08:04:09.918230 #5200]  INFO -- default-ubuntu-1404: Download complete.
+I, [2016-11-24T08:04:09.954321 #5200]  INFO -- default-ubuntu-1404: ubuntu 14.04 x86_64
+I, [2016-11-24T08:04:09.955041 #5200]  INFO -- default-ubuntu-1404: Getting information for chef stable  for ubuntu...
+I, [2016-11-24T08:04:09.955702 #5200]  INFO -- default-ubuntu-1404: downloading https://omnitruck.chef.io/stable/chef/metadata?v=&p=ubuntu&pv=14.04&m=x86_64
+I, [2016-11-24T08:04:09.956160 #5200]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1657/metadata.txt
+I, [2016-11-24T08:04:09.957173 #5200]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-11-24T08:04:10.389459 #5200]  INFO -- default-ubuntu-1404: sha1	e720803538b5db3cc9924121e3aa9e5a7a03cf79
+I, [2016-11-24T08:04:10.391362 #5200]  INFO -- default-ubuntu-1404: sha256	48e574a90ed653e1fcc3efacf89ad447273dece6b8c41f5376acebbb17909034
+I, [2016-11-24T08:04:10.394925 #5200]  INFO -- default-ubuntu-1404: url	https://packages.chef.io/files/stable/chef/12.16.42/ubuntu/14.04/chef_12.16.42-1_amd64.deb
+I, [2016-11-24T08:04:10.395066 #5200]  INFO -- default-ubuntu-1404: version	12.16.42
+I, [2016-11-24T08:04:10.397754 #5200]  INFO -- default-ubuntu-1404: downloaded metadata file looks valid...
+I, [2016-11-24T08:04:10.413670 #5200]  INFO -- default-ubuntu-1404: downloading https://packages.chef.io/files/stable/chef/12.16.42/ubuntu/14.04/chef_12.16.42-1_amd64.deb
+I, [2016-11-24T08:04:10.414386 #5200]  INFO -- default-ubuntu-1404:   to file /tmp/install.sh.1657/chef_12.16.42-1_amd64.deb
+I, [2016-11-24T08:04:10.415890 #5200]  INFO -- default-ubuntu-1404: trying wget...
+I, [2016-11-24T08:05:23.113410 #5200]  INFO -- default-ubuntu-1404: Comparing checksum with sha256sum...
+I, [2016-11-24T08:05:23.416690 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:23.417006 #5200]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-11-24T08:05:23.417164 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:23.417476 #5200]  INFO -- default-ubuntu-1404: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-11-24T08:05:23.417731 #5200]  INFO -- default-ubuntu-1404: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-11-24T08:05:23.417970 #5200]  INFO -- default-ubuntu-1404: be upgraded without warning on new releases, even to new major releases.
+I, [2016-11-24T08:05:23.418220 #5200]  INFO -- default-ubuntu-1404: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-11-24T08:05:23.418507 #5200]  INFO -- default-ubuntu-1404: CI/CD environments.
+I, [2016-11-24T08:05:23.418662 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:23.418871 #5200]  INFO -- default-ubuntu-1404: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-11-24T08:05:23.418979 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:23.419164 #5200]  INFO -- default-ubuntu-1404: Installing chef 
+I, [2016-11-24T08:05:23.419321 #5200]  INFO -- default-ubuntu-1404: installing with dpkg...
+I, [2016-11-24T08:05:23.509770 #5200]  INFO -- default-ubuntu-1404: Selecting previously unselected package chef.
+I, [2016-11-24T08:05:23.747674 #5200]  INFO -- default-ubuntu-1404: (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 36676 files and directories currently installed.)
+I, [2016-11-24T08:05:23.751044 #5200]  INFO -- default-ubuntu-1404: Preparing to unpack .../chef_12.16.42-1_amd64.deb ...
+I, [2016-11-24T08:05:23.759857 #5200]  INFO -- default-ubuntu-1404: Unpacking chef (12.16.42-1) ...
+I, [2016-11-24T08:05:32.457775 #5200]  INFO -- default-ubuntu-1404: Setting up chef (12.16.42-1) ...
+I, [2016-11-24T08:05:32.539638 #5200]  INFO -- default-ubuntu-1404: Thank you for installing Chef!
+I, [2016-11-24T08:05:32.618191 #5200]  INFO -- default-ubuntu-1404: Transferring files to <default-ubuntu-1404>
+I, [2016-11-24T08:05:34.713916 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:00+00:00] INFO: Started chef-zero at chefzero://localhost:8889 with repository at /tmp/kitchen, /tmp/kitchen
+I, [2016-11-24T08:05:34.714175 #5200]  INFO -- default-ubuntu-1404:   One version per cookbook
+I, [2016-11-24T08:05:34.714300 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:34.714556 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:00+00:00] INFO: Forking chef instance to converge...
+I, [2016-11-24T08:05:34.725767 #5200]  INFO -- default-ubuntu-1404: Starting Chef Client, version 12.16.42
+I, [2016-11-24T08:05:34.726048 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:00+00:00] INFO: *** Chef 12.16.42 ***
+I, [2016-11-24T08:05:34.726251 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:00+00:00] INFO: Platform: x86_64-linux
+I, [2016-11-24T08:05:34.728410 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:00+00:00] INFO: Chef-client pid: 1746
+I, [2016-11-24T08:05:37.047207 #5200]  INFO -- default-ubuntu-1404: Creating a new client identity for default-ubuntu-1404 using the validator key.
+I, [2016-11-24T08:05:37.047568 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Client key /tmp/kitchen/client.pem is not present - registering
+I, [2016-11-24T08:05:37.298720 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Setting the run_list to ["recipe[apache_exercise::test_install_apache2]", "recipe[apache_exercise::apache_update]"] from CLI options
+I, [2016-11-24T08:05:37.308623 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Run List is [recipe[apache_exercise::test_install_apache2], recipe[apache_exercise::apache_update]]
+I, [2016-11-24T08:05:37.308938 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Run List expands to [apache_exercise::test_install_apache2, apache_exercise::apache_update]
+I, [2016-11-24T08:05:37.309234 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Starting Chef Run for default-ubuntu-1404
+I, [2016-11-24T08:05:37.309507 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Running start handlers
+I, [2016-11-24T08:05:37.309710 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Start handlers complete.
+I, [2016-11-24T08:05:37.310970 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found: 
+I, [2016-11-24T08:05:37.311628 #5200]  INFO -- default-ubuntu-1404: resolving cookbooks for run list: ["apache_exercise::test_install_apache2", "apache_exercise::apache_update"]
+I, [2016-11-24T08:05:37.342850 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Loading cookbooks [apache_exercise@0.1.0]
+I, [2016-11-24T08:05:37.344071 #5200]  INFO -- default-ubuntu-1404: Synchronizing Cookbooks:
+I, [2016-11-24T08:05:37.355092 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/recipes/default.rb in the cache.
+I, [2016-11-24T08:05:37.355413 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/recipes/test_down_tag_sentinel.rb in the cache.
+I, [2016-11-24T08:05:37.355606 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/recipes/test_install_apache2.rb in the cache.
+I, [2016-11-24T08:05:37.356383 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/files/default/apache2/.testfile.un~ in the cache.
+I, [2016-11-24T08:05:37.356599 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/files/default/apache2/sites-enabled/default.conf in the cache.
+I, [2016-11-24T08:05:37.358164 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/README.md in the cache.
+I, [2016-11-24T08:05:37.359193 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/metadata.json in the cache.
+I, [2016-11-24T08:05:37.359775 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/README.md~ in the cache.
+I, [2016-11-24T08:05:37.360013 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:03+00:00] INFO: Storing updated cookbooks/apache_exercise/recipes/apache_update.rb in the cache.
+I, [2016-11-24T08:05:37.360992 #5200]  INFO -- default-ubuntu-1404:   - apache_exercise (0.1.0)
+I, [2016-11-24T08:05:37.361574 #5200]  INFO -- default-ubuntu-1404: Installing Cookbook Gems:
+I, [2016-11-24T08:05:37.362178 #5200]  INFO -- default-ubuntu-1404: Compiling Cookbooks...
+I, [2016-11-24T08:05:37.374866 #5200]  INFO -- default-ubuntu-1404: Converging 7 resources
+I, [2016-11-24T08:05:37.375472 #5200]  INFO -- default-ubuntu-1404: Recipe: apache_exercise::test_install_apache2
+I, [2016-11-24T08:05:37.376254 #5200]  INFO -- default-ubuntu-1404:   * apt_package[apache2] action install[2016-11-24T14:05:03+00:00] INFO: Processing apt_package[apache2] action install (apache_exercise::test_install_apache2 line 3)
+I, [2016-11-24T08:05:46.087063 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:12+00:00] INFO: apt_package[apache2] installed apache2 at 2.4.7-1ubuntu4.13
+I, [2016-11-24T08:05:46.087168 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.087239 #5200]  INFO -- default-ubuntu-1404:     - install version 2.4.7-1ubuntu4.13 of package apache2
+I, [2016-11-24T08:05:46.087279 #5200]  INFO -- default-ubuntu-1404:   * service[apache2] action start[2016-11-24T14:05:12+00:00] INFO: Processing service[apache2] action start (apache_exercise::test_install_apache2 line 7)
+I, [2016-11-24T08:05:46.182084 #5200]  INFO -- default-ubuntu-1404:  (up to date)
+I, [2016-11-24T08:05:46.183220 #5200]  INFO -- default-ubuntu-1404: Recipe: apache_exercise::apache_update
+I, [2016-11-24T08:05:46.184928 #5200]  INFO -- default-ubuntu-1404:   * log[message] action write[2016-11-24T14:05:12+00:00] INFO: Processing log[message] action write (apache_exercise::apache_update line 8)
+I, [2016-11-24T08:05:46.186242 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:12+00:00] INFO: OUTPUT FROM DOWNTAG_EXISTS: false
+I, [2016-11-24T08:05:46.186695 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.187383 #5200]  INFO -- default-ubuntu-1404:   
+I, [2016-11-24T08:05:46.188857 #5200]  INFO -- default-ubuntu-1404:   * log[message] action write[2016-11-24T14:05:12+00:00] INFO: Processing log[message] action write (apache_exercise::apache_update line 23)
+I, [2016-11-24T08:05:46.189876 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:12+00:00] INFO: No down-tag found, creating down-tag
+I, [2016-11-24T08:05:46.190276 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.190868 #5200]  INFO -- default-ubuntu-1404:   
+I, [2016-11-24T08:05:46.192230 #5200]  INFO -- default-ubuntu-1404:   * remote_directory[/etc/apache2] action create[2016-11-24T14:05:12+00:00] INFO: Processing remote_directory[/etc/apache2] action create (apache_exercise::apache_update line 30)
+I, [2016-11-24T08:05:46.199190 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.199755 #5200]  INFO -- default-ubuntu-1404:   Recipe: <Dynamically Defined Resource>
+I, [2016-11-24T08:05:46.200642 #5200]  INFO -- default-ubuntu-1404:     * cookbook_file[/etc/apache2/.testfile.un~] action create[2016-11-24T14:05:12+00:00] INFO: Processing cookbook_file[/etc/apache2/.testfile.un~] action create (dynamically defined)
+I, [2016-11-24T08:05:46.205144 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/.testfile.un~] created file /etc/apache2/.testfile.un~
+I, [2016-11-24T08:05:46.205480 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.207616 #5200]  INFO -- default-ubuntu-1404:       - create new file /etc/apache2/.testfile.un~[2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/.testfile.un~] updated file contents /etc/apache2/.testfile.un~
+I, [2016-11-24T08:05:46.207956 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.208480 #5200]  INFO -- default-ubuntu-1404:       - update content in file /etc/apache2/.testfile.un~ from none to 51b3d6
+I, [2016-11-24T08:05:46.210792 #5200]  INFO -- default-ubuntu-1404:       (new content is binary, diff output suppressed)[2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/.testfile.un~] mode changed to 644
+I, [2016-11-24T08:05:46.211081 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.212737 #5200]  INFO -- default-ubuntu-1404:       - change mode from '' to '0644'
+I, [2016-11-24T08:05:46.214587 #5200]  INFO -- default-ubuntu-1404:     * cookbook_file[/etc/apache2/sites-enabled/default.conf] action create[2016-11-24T14:05:12+00:00] INFO: Processing cookbook_file[/etc/apache2/sites-enabled/default.conf] action create (dynamically defined)
+I, [2016-11-24T08:05:46.217248 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/sites-enabled/default.conf] created file /etc/apache2/sites-enabled/default.conf
+I, [2016-11-24T08:05:46.217562 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.219266 #5200]  INFO -- default-ubuntu-1404:       - create new file /etc/apache2/sites-enabled/default.conf[2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/sites-enabled/default.conf] updated file contents /etc/apache2/sites-enabled/default.conf
+I, [2016-11-24T08:05:46.219642 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.220266 #5200]  INFO -- default-ubuntu-1404:       - update content in file /etc/apache2/sites-enabled/default.conf from none to eb0686
+I, [2016-11-24T08:05:46.221194 #5200]  INFO -- default-ubuntu-1404:       --- /etc/apache2/sites-enabled/default.conf	2016-11-24 14:05:12.427174999 +0000
+I, [2016-11-24T08:05:46.222103 #5200]  INFO -- default-ubuntu-1404:       +++ /etc/apache2/sites-enabled/.chef-default20161124-1746-7xzqfh.conf	2016-11-24 14:05:12.427174999 +0000
+I, [2016-11-24T08:05:46.222738 #5200]  INFO -- default-ubuntu-1404:       @@ -1 +1,5 @@
+I, [2016-11-24T08:05:46.223321 #5200]  INFO -- default-ubuntu-1404:       +<VirtualHost *:80>
+I, [2016-11-24T08:05:46.223927 #5200]  INFO -- default-ubuntu-1404:       +  DocumentRoot "/var/www/html"
+I, [2016-11-24T08:05:46.225267 #5200]  INFO -- default-ubuntu-1404:       +  ServerName localhost
+I, [2016-11-24T08:05:46.225532 #5200]  INFO -- default-ubuntu-1404:       +</VirtualHost>[2016-11-24T14:05:12+00:00] INFO: cookbook_file[/etc/apache2/sites-enabled/default.conf] mode changed to 644
+I, [2016-11-24T08:05:46.225747 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:46.226895 #5200]  INFO -- default-ubuntu-1404:       - change mode from '' to '0644'
+I, [2016-11-24T08:05:46.227312 #5200]  INFO -- default-ubuntu-1404:   
+I, [2016-11-24T08:05:46.227798 #5200]  INFO -- default-ubuntu-1404: Recipe: apache_exercise::apache_update
+I, [2016-11-24T08:05:46.228728 #5200]  INFO -- default-ubuntu-1404:   * service[apache2] action restart[2016-11-24T14:05:12+00:00] INFO: Processing service[apache2] action restart (apache_exercise::apache_update line 39)
+I, [2016-11-24T08:05:49.476490 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:15+00:00] INFO: service[apache2] restarted
+I, [2016-11-24T08:05:49.477270 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:49.480135 #5200]  INFO -- default-ubuntu-1404:     - restart service service[apache2]
+I, [2016-11-24T08:05:49.483191 #5200]  INFO -- default-ubuntu-1404:   * log[message] action write[2016-11-24T14:05:15+00:00] INFO: Processing log[message] action write (apache_exercise::apache_update line 44)
+I, [2016-11-24T08:05:49.485473 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:15+00:00] INFO: Apache2 restart complete, removing down-tag
+I, [2016-11-24T08:05:49.486160 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:49.486816 #5200]  INFO -- default-ubuntu-1404:   
+I, [2016-11-24T08:05:49.556887 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:15+00:00] INFO: Chef Run complete in 12.253522538 seconds
+I, [2016-11-24T08:05:49.558895 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:49.559279 #5200]  INFO -- default-ubuntu-1404: Running handlers:
+I, [2016-11-24T08:05:49.559754 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:15+00:00] INFO: Running report handlers
+I, [2016-11-24T08:05:49.560268 #5200]  INFO -- default-ubuntu-1404: Running handlers complete
+I, [2016-11-24T08:05:49.560733 #5200]  INFO -- default-ubuntu-1404: [2016-11-24T14:05:15+00:00] INFO: Report handlers complete
+I, [2016-11-24T08:05:49.561174 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:49.561545 #5200]  INFO -- default-ubuntu-1404: Deprecated features used!
+I, [2016-11-24T08:05:49.562023 #5200]  INFO -- default-ubuntu-1404:   Cloning resource attributes for log[message] from prior resource (CHEF-3694)
+I, [2016-11-24T08:05:49.562436 #5200]  INFO -- default-ubuntu-1404: Previous log[message]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:8:in `from_file'
+I, [2016-11-24T08:05:49.562879 #5200]  INFO -- default-ubuntu-1404: Current  log[message]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:23:in `from_file' at 1 location:
+I, [2016-11-24T08:05:49.563396 #5200]  INFO -- default-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:23:in `from_file'
+I, [2016-11-24T08:05:49.563807 #5200]  INFO -- default-ubuntu-1404:   Cloning resource attributes for service[apache2] from prior resource (CHEF-3694)
+I, [2016-11-24T08:05:49.563869 #5200]  INFO -- default-ubuntu-1404: Previous service[apache2]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/test_install_apache2.rb:7:in `from_file'
+I, [2016-11-24T08:05:49.563907 #5200]  INFO -- default-ubuntu-1404: Current  service[apache2]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:39:in `from_file' at 1 location:
+I, [2016-11-24T08:05:49.563940 #5200]  INFO -- default-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:39:in `from_file'
+I, [2016-11-24T08:05:49.564479 #5200]  INFO -- default-ubuntu-1404:   Cloning resource attributes for log[message] from prior resource (CHEF-3694)
+I, [2016-11-24T08:05:49.564612 #5200]  INFO -- default-ubuntu-1404: Previous log[message]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:23:in `from_file'
+I, [2016-11-24T08:05:49.564650 #5200]  INFO -- default-ubuntu-1404: Current  log[message]: /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:44:in `from_file' at 1 location:
+I, [2016-11-24T08:05:49.564681 #5200]  INFO -- default-ubuntu-1404:     - /tmp/kitchen/cache/cookbooks/apache_exercise/recipes/apache_update.rb:44:in `from_file'
+I, [2016-11-24T08:05:49.564731 #5200]  INFO -- default-ubuntu-1404: 
+I, [2016-11-24T08:05:49.566641 #5200]  INFO -- default-ubuntu-1404: Chef Client finished, 8/9 resources updated in 14 seconds
+I, [2016-11-24T08:05:49.629000 #5200]  INFO -- default-ubuntu-1404: Finished converging <default-ubuntu-1404> (2m10.54s).
